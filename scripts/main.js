@@ -1,4 +1,4 @@
-const CLEFAPI = '76e112eda525910de5895f2089f399e5';
+const CLEFAPI = '4ece89ae18f4ca7f3cedbea405e5b399';
 let resultatsAPI;
 
 if(navigator.geolocation) {
@@ -15,7 +15,7 @@ if(navigator.geolocation) {
 }
 
 function AppelAPI(long, lat) {
-  fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&lang=fr&appid=${CLEFAPI}`)
+  fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minutely&units=metric&lang=fr&appid=${CLEFAPI}`)
   .then((reponse) => {
     return reponse.json();
 })
