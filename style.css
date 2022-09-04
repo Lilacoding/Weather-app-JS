@@ -90,7 +90,7 @@ h1 {
 }
 
 /* Animation chargement */
-/* 
+
 .overlay-icone-chargement {
     position: absolute;
     width: 100%;
@@ -108,4 +108,4 @@ h1 {
 }
 .disparition {
     opacity: 0;
-} */
+}
